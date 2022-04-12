@@ -89,6 +89,11 @@ def read_img(env, path, size=None):
         img = img[:, :, :3]
     return img
 
+def read_npy(path):
+    if os.path.splitext(path)[1] == '.npy':
+        img = np.load(path)
+    return img
+
 def read_condition(path):
     cond = np.load(path, allow_pickle=True).astype(np.float32)
     return cond

@@ -9,7 +9,7 @@ datasets:
     name: test_set
     mode: LQGT_base 
     dataroot_LQ: ../results/adaptive_global_color_mapping/test_set
-    dataroot_GT: ../dataset/test_set/test_hdr
+    dataroot_GT: ../dataset/dataset/test_set/test_hdr
     
 #### network structures
 network_G:

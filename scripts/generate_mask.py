@@ -5,8 +5,8 @@ import os.path as osp
 
 r=0.95
 
-in_path = '../dataset/test_set/test_sdr'
-out_path = '../dataset/test_set/test_sdr_mask'
+in_path = '../dataset/dataset/test_set/test_sdr'
+out_path = '../dataset/dataset/test_set/test_sdr_mask'
 
 if not osp.exists(out_path):
     os.mkdir(out_path)
