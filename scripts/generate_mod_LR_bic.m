@@ -3,9 +3,9 @@ function generate_mod_lr_bic()
 
 %% set parameters
 % comment the unnecessary line
-input_folder = '../dataset/test_set/test_sdr';
+input_folder = '../dataset/dataset/training_set/train_sdr';
 % save_mod_folder = '...';
-save_LR_folder = '../dataset/test_set/cond';
+save_LR_folder = '../dataset/dataset/training_set/cond';
 %save_bic_folder = '...';
 
 up_scale = 4;

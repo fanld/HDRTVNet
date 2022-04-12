@@ -11,9 +11,9 @@ datasets:
   train:
     name: HDRTV1K
     mode: LQGT_condition
-    dataroot_LQ: ../dataset/training_set/train_sdr_sub
-    dataroot_cond: ../dataset/training_set/cond
-    dataroot_GT: ../dataset/training_set/train_hdr_sub
+    dataroot_LQ: ../dataset/dataset/training_set/train_sdr_sub
+    dataroot_cond: ../dataset/dataset/training_set/cond
+    dataroot_GT: ../dataset/dataset/training_set/train_hdr_sub
     cond_scale: 4
     use_shuffle: true
     n_workers: 4 # 8
@@ -24,9 +24,9 @@ datasets:
   val:
     name: HDRTV1K
     mode: LQGT_condition
-    dataroot_LQ: ../dataset/test_set/test_sdr
-    dataroot_cond: ../dataset/test_set/cond
-    dataroot_GT: ../dataset/test_set/test_hdr
+    dataroot_LQ: ../dataset/dataset/test_set/test_sdr
+    dataroot_cond: ../dataset/dataset/test_set/cond
+    dataroot_GT: ../dataset/dataset/test_set/test_hdr
     cond_scale: 4
     save_img: false
 
