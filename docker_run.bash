@@ -1,0 +1,2 @@
+::docker run -d --name pytorch-container -v C:/Users/fanld/Documents/code/HDRTVNet:/workspace pytorch:v1
+docker run -d --name pytorch-container -v /media/fanld/data:/workspace pytorch-fanld:0.2 --gpus=all -idt
