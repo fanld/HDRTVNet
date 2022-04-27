@@ -30,7 +30,7 @@ function sim = SR_SIM(image1, image2)
 %        
 %-----------------------------------------------------------------------
 [rows, cols, junk] = size(image1);
-if junk == 3
+if junk == 3  %rgb2yiq。YIQ，是NTSC（National Television Standards Committee）电视系统标准。Y是提供黑白电视及彩色电视的亮度信号（Luminance），即亮度（Brightness），I代表In-phase，色彩从橙色到青色，Q代表Quadrature-phase，色彩从紫色到黄绿色。
     Y1 = 0.299 * double(image1(:,:,1)) + 0.587 * double(image1(:,:,2)) + 0.114 * double(image1(:,:,3));
     Y2 = 0.299 * double(image2(:,:,1)) + 0.587 * double(image2(:,:,2)) + 0.114 * double(image2(:,:,3));
 else
@@ -39,7 +39,7 @@ else
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-% Download the image
+% downsample the image    滤波+下采样？fanld
 %%%%%%%%%%%%%%%%%%%%%%%%%
 minDimension = min(rows,cols);
 F = max(1,round(minDimension / 256));
